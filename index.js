@@ -25,6 +25,7 @@ function fetchNstore(category) {
                     console.log("!!! error while inserting... " + category);
                     console.log(err);
                 } else {
+                    console.log(result);
                     console.log("... succesfully insert " + data_values.length + " items" );
                 }
                 console.log("[store end] __ " + category);
@@ -34,4 +35,4 @@ function fetchNstore(category) {
 };
 
 //_.map(category,fetchNstore);
-const intervalObj = setInterval( () => { _.map(category,fetchNstore) }, 60 * 1000);
+const intervalObj = setInterval( () => { _.map(category,fetchNstore) }, 10 * 1000);
