@@ -20,7 +20,7 @@ function fetchNstore(category) {
                 return result;
             },[]);
 
-            con.query("INSERT INTO "+category+" (date,price,amount,tid,type) VALUES?",[data_values],function(err,result) {
+            con.query("INSERT IGNORE INTO "+category+" (date,price,amount,tid,type) VALUES?",[data_values],function(err,result) {
                 if(err) {
                     console.log("!!! error while inserting... " + category);
                     console.log(err);
