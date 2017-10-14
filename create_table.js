@@ -12,7 +12,7 @@ const category = ["btc_idr","bch_idr","eth_idr","etc_idr","ltc_idr","waves_idr",
 
 function createTable(category) {
     console.log("[create table start]");
-    con.query("CREATE TABLE "+category+" (tid INT(8) unsigned NOT NULL, amount FLOAT, price INT(10) unsigned NOT NULL, data INT(10) unsigned NOT NULL, type VARCHAR(5))",function(err,result) {
+    con.query("CREATE TABLE "+category+" (tid INT(8) unsigned NOT NULL, amount FLOAT NOT NULL, price FLOAT NOT NULL, date INT(10) unsigned NOT NULL, type VARCHAR(5) NOT NULL)",function(err,result) {
         if(err) {
             console.log("!!! error while creating table");
         } else {
