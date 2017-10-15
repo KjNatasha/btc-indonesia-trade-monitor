@@ -7,8 +7,7 @@ const category = ["btc_idr","bch_idr","eth_idr","etc_idr","ltc_idr","waves_idr",
 var con = mysql.createConnection({
     host: "localhost",
     user: "root",
-    password: "code1234",
-    database: "mydb"
+    database: "tradeslocaltestdb"
 });
 
 function fetchNstore(category) {

@@ -4,8 +4,7 @@ const _ = require('lodash');
 const con = mysql.createConnection({
     host: 'localhost',
     user: 'root',
-    password: 'code1234',
-    database: 'mydb',
+    database: 'tradeslocaltestdb',
     multipleStatements: true
 });
 

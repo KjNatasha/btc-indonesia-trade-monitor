@@ -4,8 +4,7 @@ const _ = require('lodash');
 const con = mysql.createConnection({
     host: 'localhost',
     user: 'root',
-    password: 'code1234',
-    database: 'mydb'
+    database: 'tradeslocaltestdb'
 });
 
 const category = ["btc_idr","bch_idr","eth_idr","etc_idr","ltc_idr","waves_idr","xrp_idr","xzc_idr","bts_btc","doge_btc","eth_btc","ltc_btc","nxt_btc","xlm_btc","xem_btc","xrp_btc"];
